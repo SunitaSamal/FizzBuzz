@@ -30,5 +30,12 @@ namespace FizzBuzz.Tests
             Assert.Equal("FizzBuzz", FizzBuzzOuput.GetFizzBuzzOutput(15));
             Assert.Equal("FizzBuzz", FizzBuzzOuput.GetFizzBuzzOutput(30)); 
         }
+
+        [Fact]
+        public void GetFizzBuzzOutput_Returns_Number_When_IsNot_Divisible_By_3_Or_5()
+        {
+            Assert.Equal("-13", FizzBuzzOuput.GetFizzBuzzOutput(-13));
+            Assert.Equal("8", FizzBuzzOuput.GetFizzBuzzOutput(8)); 
+        }
     }
 }
